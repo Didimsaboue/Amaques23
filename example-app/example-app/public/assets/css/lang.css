@@ -1,0 +1,70 @@
+/* Styles pour la barre latérale */
+.sidebar {
+    width: 250px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #333;
+    overflow: auto;
+    z-index: 1000;
+    opacity: 1;
+}
+
+html[dir="rtl"] .sidebar {
+    right: 0;
+    left: auto;
+}
+
+/* Masquer la barre latérale */
+.sidebar.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+html[dir="rtl"] .sidebar.hidden {
+    transform: translateX(100%);
+}
+
+/* Styles pour le contenu principal */
+.main {
+    margin-left: 250px; /* Ajoutez une marge à gauche pour laisser de l'espace pour la barre latérale */
+    transition: margin-left 0.5s ease, margin-right 0.5s ease;
+}
+
+html[dir="rtl"] .main {
+    margin-left: 0;
+    margin-right: 250px;
+}
+
+.main.expanded {
+    margin-left: 0; /* Ajustez la marge à gauche lorsque la barre latérale est masquée */
+}
+
+html[dir="rtl"] .main.expanded {
+    margin-right: 0;
+}
+
+/* Styles pour la barre supérieure */
+.header-nav {
+    display: flex;
+    justify-content: flex-start; /* Alignez les éléments à gauche */
+    margin-left: 10px; /* Ajoutez de l'espace à gauche */
+}
+
+.notification-icon,
+.message-icon {
+    margin-right: 10px; /* Ajoutez de l'espace entre les icônes */
+}
+
+html[dir="rtl"] .notification-icon,
+html[dir="rtl"] .message-icon {
+    margin-left: 10px; /* Ajoutez de l'espace entre les icônes pour la disposition RTL */
+}
+
+/* Styles pour l'icône de la barre latérale */
+.sidebar-icon {
+    cursor: pointer;
+    margin-left: 10px; /* Ajoutez de l'espace à gauche pour l'icône de la barre latérale */
+}

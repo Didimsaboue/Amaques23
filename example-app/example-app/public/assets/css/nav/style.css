@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+
+
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+.footer {
+  background-color: #f8f9fa; /* Couleur de fond du footer */
+  padding: 2rem 0; /* Espacement interne du footer */
+  text-align: center; /* Alignement du texte au centre */
+}
+
+.navbar {
+  width: 100%; /* Vous pouvez ajuster la largeur selon vos besoins */
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9); /* Blanc avec une transparence de 0.9 */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  color: #000;
+  opacity: 0.85;
+  height: 100px;
+  z-index: 12;
+}
+.logo img {
+  height: 80px; /* Vous pouvez ajuster la hauteur selon vos besoins */
+  vertical-align: -10px;
+  margin-left: -60px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+/* .logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+} */
+
+/* ............//// Showcase styling ////......... */
+ .profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  width: 200px;
+  height: auto;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+/* .navbar .menu-items .nn:hover .profile-dropdown {
+  display: block;
+} */
+
+.dropdown-item {
+  padding: 5px 10px;
+  color: #333; /* Couleur du texte */
+   text-decoration: none;
+} 
+
+ .dropdown-item:hover {
+  background-color: #ef233c;
+} 
